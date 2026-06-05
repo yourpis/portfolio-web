@@ -56,7 +56,7 @@ export default function Home() {
       y: 0,
       transition: {
         duration: 1.6, // Way slower reveal for cinematic appearance
-        ease: [0.16, 1, 0.3, 1], // Premium easeOutExpo curve
+        ease: [0.16, 1, 0.3, 1] as const, // Premium easeOutExpo curve
       },
     },
   };
@@ -115,7 +115,7 @@ export default function Home() {
             transition={{
               repeat: Infinity,
               duration: 1.2,
-              ease: "steps(2)",
+              ease: (t: number) => (t < 0.5 ? 0 : 1),
             }}
             style={{
               background: "linear-gradient(to bottom, #22c55e, #eab308, #f97316, #ef4444, #a855f7, #3b82f6)"

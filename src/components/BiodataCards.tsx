@@ -10,7 +10,7 @@ export default function BiodataCards() {
       y: 0,
       transition: {
         duration: 0.8,
-        ease: [0.16, 1, 0.3, 1], // Smooth expo curve
+        ease: [0.16, 1, 0.3, 1] as const, // Smooth expo curve
       },
     },
   };
