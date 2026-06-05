@@ -29,7 +29,7 @@ export default function Navbar() {
       className="fixed top-0 left-0 w-full z-50 flex justify-between items-center p-6 text-sm font-medium text-neutral-400 backdrop-blur-md bg-neutral-950/70 border-b border-neutral-900/50"
     >
       <div className="flex items-center gap-2 text-white">
-        <span className="font-bold text-lg">▲ Tubagus Dafa</span>
+        <span className="font-bold text-lg">Tubagus Dafa</span>
       </div>
       <div className="hidden md:flex gap-6">
         <a href="#" className="hover:text-white transition-colors">Services</a>
