@@ -6,6 +6,7 @@ import Navbar from '@/components/Navbar';
 import Capabilities from '@/components/Capabilities';
 import BiodataCards from '@/components/BiodataCards';
 import SelectedWorks from '@/components/SelectedWorks';
+import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
   const [isTypingComplete, setIsTypingComplete] = useState(false);
@@ -183,6 +184,8 @@ export default function Home() {
       <SelectedWorks />
 
       <Capabilities />
+
+      <ContactForm />
 
     </main>
   );
