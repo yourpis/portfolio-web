@@ -28,12 +28,10 @@ export default function Navbar() {
 
   const navVariants = {
     expanded: {
-      width: isMobile ? "90%" : "600px",
       borderRadius: "999px",
       padding: isMobile ? "12px 16px" : "12px 24px",
     },
     shrunk: {
-      width: isMobile ? "280px" : "360px",
       borderRadius: "999px",
       padding: "10px 16px",
     },
@@ -41,11 +39,12 @@ export default function Navbar() {
 
   return (
     <motion.nav
+      layout
       variants={navVariants}
       initial="expanded"
       animate={isShrunk ? "shrunk" : "expanded"}
       transition={{ duration: 0.4, ease: [0.25, 1, 0.5, 1] }}
-      className="fixed left-1/2 -translate-x-1/2 z-50 bottom-6 md:bottom-auto md:top-6 bg-white/[0.03] backdrop-blur-lg border border-white/10 shadow-2xl flex items-center justify-between overflow-hidden text-sm font-medium text-neutral-400"
+      className="fixed left-1/2 -translate-x-1/2 z-50 bottom-6 md:bottom-auto md:top-6 bg-black/40 backdrop-blur-lg border border-white/10 shadow-2xl flex items-center justify-between gap-6 overflow-hidden text-sm font-medium text-neutral-400"
     >
       <div className="flex items-center gap-2 text-white flex-shrink-0 whitespace-nowrap">
         <span className="font-bold text-lg">Tubagus Dafa</span>
